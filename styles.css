@@ -1,0 +1,198 @@
+/* Sweet Treats Bakery - Main Styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9f7;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #b08968; /* light brown */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  animation: fadeInDown 1.5s;
+}
+
+.hero p {
+  animation: fadeInUp 1.5s;
+}
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #7f5539; /* deep brown */
+  font-weight: 700;
+}
+
+/* Menu Cards */
+.menu {
+  background-color: #f5e6d3; /* light beige */
+  padding: 80px 20px;
+}
+
+.menu h2 {
+  color: #7f5539; /* deep brown */
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clickable-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.clickable-card:active {
+  transform: scale(0.98);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background: #f0e1cf; /* warm light brown */
+  text-align: center;
+}
+
+.contact h2 {
+  color: #7f5539;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background-color: #b08968; /* light brown */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+/* Cake Detail Pages Styles */
+.cake-detail-page {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff9f7;
+}
+
+.cake-detail-page .hero {
+  background: linear-gradient(135deg, #b08968, #a47148);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cake-detail-page .cake-item {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.cake-detail-page .cake-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.cake-detail-page .cake-info {
+  flex: 1;
+}
+
+.cake-detail-page .price {
+  color: #7f5539;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.cake-detail-page .hero-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Signature Cakes Page */
+.signature-cakes .hero {
+  background: linear-gradient(135deg, #b08968, #a47148);
+}
+
+/* Oreo Cake Page */
+.oreo-cakes .hero {
+  background: linear-gradient(135deg, #4a4a4a, #6a6a6a);
+}
