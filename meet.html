@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Treats Bakery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand animate__animated animate__bounceInLeft" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/921/921056.png" alt="Bakery Man Logo" width="32" height="32" class="d-inline-block align-text-top me-2">
+        Sweet Treats
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse animate__animated animate__fadeInRight" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content animate__animated animate__fadeInUp">
+      <h1>Welcome to Sweet Treats Bakery</h1>
+      <p>Freshly baked happiness, made with love ❤️</p>
+      <a href="#menu" class="btn btn-light mt-3">View Menu</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container animate__animated animate__fadeInUp">
+      <h2>About Us</h2>
+      <p class="mt-3"> 🌟Welcome to Cake Heaven Bakery, where every slice tells a story of love, passion, and pure sweetness. 💕
+
+        Founded with a dream and a whisk, Cake Heaven began as a small home kitchen filled with the aroma of freshly baked cakes and the laughter of happy hearts. Over time, that tiny kitchen grew into a warm, welcoming bakery loved by families, friends, and dessert lovers across the city.
+        
+        Here at Cake Heaven, baking isn’t just a business — it’s our way of sharing joy. Each cake is made from scratch using the finest ingredients: farm-fresh eggs, rich butter, real cream, and love that you can taste in every bite. From classic Chocolate Fudge Cakes and dreamy Red Velvet Delights to our signature Strawberry Bliss and Blueberry Dreams, every creation is handcrafted to perfection.
+        
+        We believe that every celebration deserves a sweet touch, and that’s why our bakers pour their hearts into every recipe. Whether you’re celebrating a birthday, a wedding, or just craving something special, we’re here to make your moments magical and your memories delicious.
+        
+        Our secret ingredient? A sprinkle of happiness in everything we do. 💫
+        
+        At Cake Heaven, we don’t just bake cakes — we bake smiles, surprises, and unforgettable experiences. Step inside our cozy little bakery, breathe in the scent of warm vanilla and cocoa, and let your sweet journey begin.
+        
+        Because life is better with a piece of cake... and a little love in every bite. 🎂✨</p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card animate__animated animate__zoomIn clickable-card" onclick="handleCakeClick('Baked Cakes')">
+            <img src="https://d3jbu7vaxvlagf.cloudfront.net/small/v2/category_media/basic_img_16893140877992.jpg" class="card-img-top" alt="Cupcake">
+            <div class="card-body text-center">
+              <h5 class="card-title">Baked Cakes</h5>
+              <div class="row mb-2">
+                <div class="col-3"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="Baked Cake 1"></div>
+                <div class="col-3"><img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="Baked Cake 2"></div>
+                <div class="col-3"><img src="https://images.unsplash.com/photo-1458644267420-66bc8a5df504?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="Baked Cake 3"></div>
+                <div class="col-3"><img src="https://images.unsplash.com/photo-1505253219616-c3a1b91b0b1a?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded" alt="Baked Cake 4"></div>
+              </div>
+              <p>Delicious mini delights in every flavor imaginable!</p>
+              <button class="btn btn-primary mt-2">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animate__animated animate__zoomIn animate__delay-1s clickable-card" onclick="handleCakeClick('Cakes')">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cake">
+            <div class="card-body text-center">
+              <h5 class="card-title">Cakes</h5>
+              <p>Celebrate every occasion with our signature cakes.</p>
+              <button class="btn btn-primary mt-2">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animate__animated animate__zoomIn animate__delay-2s clickable-card" onclick="handleCakeClick('Oreo Cake')">
+            <img src="https://www.countlinemaldives.com/cdn/shop/products/Addasubheading-2022-08-31T132226.290.jpg?v=1661934152&width=533" class="card-img-top" alt="Pastries">
+            <div class="card-body text-center">
+              <h5 class="card-title">Oreo Cake</h5>
+              <p>Flaky, buttery, and irresistibly sweet treats.</p>
+              <button class="btn btn-primary mt-2">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container animate__animated animate__fadeInUp">
+      <h2>Contact Us</h2>
+      <p class="mt-3">📍 123 Sweet Street, Cake City<br>📞 +91 98765 *****<br>✉️ info@sweettreats.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sweet Treats Bakery | Made with Mit & Meet</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
